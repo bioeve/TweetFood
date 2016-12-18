@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dzikra.tweetfood.RatingActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rating_bg"
+        android:scaleType="centerCrop"
+        android:alpha="0.90"
+        android:id="@+id/ratingBg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.40"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this place!"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rateTitle"
+        android:textSize="24dp"
+        android:paddingTop="42dp"
+        android:textColor="#ffffff"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rateTitle"
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/comment_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your review"
+        android:layout_marginTop="33dp"
+        android:textColor="#ffffff"
+        android:id="@+id/commentTv"
+        android:layout_below="@id/ratingBar"
+        android:layout_alignLeft="@id/ratingBar"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/commentTv"
+        android:hint="Submit your review here"
+        android:background="@drawable/comment_background"
+        android:gravity="top"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_centerHorizontal="true"
+        android:text="Or send us suggestion of new places!"
+        android:textColor="#ffffff"
+        android:id="@+id/suggestButton"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/suggestButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:id="@+id/b_submitRating"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>
